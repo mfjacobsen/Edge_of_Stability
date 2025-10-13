@@ -1,0 +1,8 @@
+model_id,model_type,optimizer,learning_rate,num_epochs,train_time
+1,FullyConnectedNet,SGD,0.1,5000,14.777599573135376
+2,FullyConnectedNet,SGD,0.04,5000,14.855010032653809
+3,FullyConnectedNet,SGD,0.025,5000,14.886390686035156
+4,FullyConnectedNet,SGD,0.0181818181818181,5000,14.921042919158936
+5,FullyConnectedNet,SGD,0.1,5000,15.01114058494568
+6,FullyConnectedNet,SGD,0.04,5000,15.043351411819458
+7,FullyConnectedNet,SGD,0.025,5000,15.182540655136108
