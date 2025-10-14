@@ -1,0 +1,25 @@
+model_id,model_type,num_hidden_layers,hidden_layers_size,activation_function,optimizer,momentum,learning_rate,num_epochs,train_time
+1,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.0,0.2,5000,21.957644939422607
+2,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.0,0.1,5000,21.676711082458496
+3,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.0,0.05,5000,21.315943479537964
+4,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.0,0.025,5000,20.980998277664185
+5,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.25,0.2,5000,20.749420642852783
+6,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.25,0.1,5000,20.193835258483887
+7,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.25,0.05,5000,20.13499689102173
+8,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.25,0.025,5000,20.161481380462646
+9,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.5,0.2,5000,20.26609182357788
+10,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.5,0.1,5000,20.03428649902344
+11,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.5,0.05,5000,20.122344732284542
+12,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.5,0.025,5000,20.02063226699829
+13,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.75,0.2,5000,20.109405517578125
+14,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.75,0.1,5000,20.191099405288696
+15,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.75,0.05,5000,19.88677334785461
+16,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.75,0.025,5000,20.18707609176636
+17,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.9,0.2,5000,19.97579002380371
+18,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.9,0.1,5000,20.06185817718506
+19,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.9,0.05,5000,19.979476928710938
+20,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.9,0.025,5000,20.08940434455872
+21,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.99,0.2,5000,20.136378288269043
+22,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.99,0.1,5000,20.29273366928101
+23,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.99,0.05,5000,20.13519406318665
+24,FullyConnectedNet,2,200,<class 'torch.nn.modules.activation.Tanh'>,SGD,0.99,0.025,5000,20.209145545959473
