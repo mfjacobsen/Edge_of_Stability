@@ -3,3 +3,4 @@ model_id,model_type,num_hidden_layers,hidden_layers_size,activation_function,opt
 2,FullyConnectedNet,2,21,ReLU,RMSprop,0.001,10000,35.57
 3,FullyConnectedNet,2,21,ReLU,RMSprop,0.0003,10000,35.14
 4,FullyConnectedNet,2,21,ReLU,RMSprop,0.0001,10000,35.02
+5,FullyConnectedNet,2,21,ReLU,RMSprop,3e-05,10000,37.07
