@@ -2,3 +2,5 @@ model_id,model_type,num_hidden_layers,hidden_layers_size,activation_function,opt
 1,FullyConnectedNet,2,21,Tanh,RMSprop,0.01,5000,17.4
 2,FullyConnectedNet,2,21,Tanh,RMSprop,0.003,5000,17.68
 3,FullyConnectedNet,2,21,Tanh,RMSprop,0.001,5000,17.55
+4,FullyConnectedNet,2,21,Tanh,RMSprop,0.0003,5000,17.95
+5,FullyConnectedNet,2,21,Tanh,RMSprop,0.0001,5000,17.67
