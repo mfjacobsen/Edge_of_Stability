@@ -28,3 +28,10 @@ model_id,model_type,num_hidden_layers,hidden_layers_size,activation_function,opt
 27,CNN,,,ReLU,SGD,CrossEntropyLoss,0.005,0.0,3000,5.28
 28,CNN,,,ReLU,SGD,CrossEntropyLoss,0.002,0.0,3000,5.08
 29,CNN,,,ReLU,SGD,CrossEntropyLoss,0.001,0.0,3000,4.67
+30,FullyConnectedNet,,,Tanh,RMSprop,MSELoss,5e-05,0.0,4000,0.37
+31,FullyConnectedNet,,,Tanh,RMSprop,MSELoss,2e-05,0.0,4000,0.34
+32,FullyConnectedNet,,,Tanh,RMSprop,MSELoss,1e-05,0.0,4000,0.43
+33,FullyConnectedNet,,,Tanh,RMSprop,CrossEntropyLoss,5e-05,0.0,2000,0.28
+34,FullyConnectedNet,,,Tanh,RMSprop,CrossEntropyLoss,2e-05,0.0,2000,0.37
+35,FullyConnectedNet,,,Tanh,RMSprop,CrossEntropyLoss,1e-05,0.0,2000,0.39
+36,FullyConnectedNet,,,Tanh,RMSprop,MSELoss,0.0001,0.0,4000,0.42
