@@ -78,8 +78,6 @@ def setup_output_files(output_dir="output"):
         metadata = pd.DataFrame({
             "model_id": pd.Series(dtype="int"),
             "model_type": pd.Series(dtype="str"),
-            "num_hidden_layers": pd.Series(dtype="int"),
-            "hidden_layers_size": pd.Series(dtype="int"),
             "activation_function": pd.Series(dtype="str"),
             "optimizer": pd.Series(dtype="str"),
             "criterion": pd.Series(dtype="str"),
@@ -681,7 +679,7 @@ def plot_rmsprop_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=T
     )
 
     fig.update_yaxes(title_text="Training Loss",
-                    range = [0.01, 0.08],
+                    range = [0.01, 0.11],
                     row=1, col=1)
     fig.update_yaxes(title_text="Sharpness",
                     range = [0, mse_y_sharp_max],
@@ -706,7 +704,7 @@ def plot_rmsprop_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=T
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_image("output/images/gd_mom_fcnn_cifar10.png",
+        fig.write_image("output/images/rmsprop_fcnn_cifar10.png",
                     width = 800, height = 400, scale = 4)
     fig.show()
 
