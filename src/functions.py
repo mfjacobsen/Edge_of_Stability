@@ -30,10 +30,12 @@ def sample_data(X, y, num_per_class):
     return X[indices], y[indices]
 
 def load_cifar_10(num_per_class=500, test_num_per_class=100):
-    # Load raw CIFAR-10 
-    train = datasets.CIFAR10(root="../data", train=True,  download=True)
-    test  = datasets.CIFAR10(root="../data", train=False, download=True)
 
+    DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
+    
+    # Load raw CIFAR-10 
+    train = datasets.CIFAR10(root=DATA_DIR, train=True,  download=True)
+    test  = datasets.CIFAR10(root=DATA_DIR, train=False, download=True)
     # # Subsample
     X, y  = sample_data(train.data, train.targets, num_per_class)
     X_test, y_test = sample_data(test.data, test.targets, test_num_per_class)
