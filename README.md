@@ -23,3 +23,5 @@ python -m src.run
 These steps will automatically download the data, set up the conda environment, and run the project code. 
 
 Outpout images are automatically displayed in the web broweser and stored in output/images. 
+
+Note, due to pytorch implementation, this code is not completely deterministic. Small variations in output images are normal, however, the experiments are designed to consistently show the edge of stability.
