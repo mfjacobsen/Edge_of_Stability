@@ -451,8 +451,7 @@ def plot_sgd_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True)
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_html("output/images/gd_fcnn_cifar10.html",
-                    width = 800, height = 400, scale = 4)
+        fig.write_html("output/images/gd_fcnn_cifar10.html")
     fig.show()
 
 def plot_sgdm_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True):
@@ -579,8 +578,7 @@ def plot_sgdm_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_html("output/images/gd_mom_fcnn_cifar10.html",
-                    width = 800, height = 400, scale = 4)
+        fig.write_html("output/images/gd_mom_fcnn_cifar10.html")
     fig.show()
 
 def plot_rmsprop_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True):
@@ -704,8 +702,7 @@ def plot_rmsprop_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=T
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_html("output/images/rmsprop_fcnn_cifar10.html",
-                    width = 800, height = 400, scale = 4)
+        fig.write_html("output/images/rmsprop_fcnn_cifar10.html")
     fig.show()
 
 def generate_gd_quadratic_plot():
@@ -800,5 +797,4 @@ def generate_gd_quadratic_plot():
     )
 
     fig.show()
-    fig.write_html("output/images/gd_quadratic.html",
-                    width = 600, height = 300, scale = 4)
+    fig.write_html("output/images/gd_quadratic.html")
