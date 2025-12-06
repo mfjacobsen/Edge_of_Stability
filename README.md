@@ -1,3 +1,5 @@
+## Edge of Stability
+
 This repository runs code that generates empirical evidence of the edge of stability in neural networks.
 
 The repository has the following structure:
@@ -10,7 +12,7 @@ The repository has the following structure:
 - environment.yml - conda environment 
 - README.md
 
-Steps for running:
+### Steps for running:
 ```
 git clone https://github.com/mfjacobsen/Edge_of_Stability
 cd Edge_of_Stability
@@ -18,5 +20,6 @@ conda env create -f environment.yml
 conda activate stability-env
 python -m src.run
 ```
+These steps will automatically download the data, set up the conda environment, and run the project code. 
 
-Outpout images are stored in output/images. 
+Outpout images are automatically displayed in the web broweser and stored in output/images. 
