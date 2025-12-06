@@ -140,10 +140,10 @@ functions.generate_gd_quadratic_plot()
 
 model_ids_mse = [1, 2, 3]
 model_ids_ce = [4, 5, 6]
-functions.plot_sgd_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=False)
+functions.plot_sgd_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=True)
 model_ids_mse = [7, 8, 9]
 model_ids_ce = [10, 11, 12]
-functions.plot_sgdm_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=False)
+functions.plot_sgdm_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=True)
 model_ids_mse = [13, 14, 15]
 model_ids_ce = [16, 17, 18]
-functions.plot_rmsprop_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=False)
+functions.plot_rmsprop_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=True)
