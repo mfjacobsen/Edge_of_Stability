@@ -1,5 +1,5 @@
-import seed
-import models
+from . import seed
+from . import models
 import src.functions as functions
 
 import torch

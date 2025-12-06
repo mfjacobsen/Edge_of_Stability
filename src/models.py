@@ -1,4 +1,5 @@
-import seed
+from . import seed
+
 import torch
 import torch.nn as nn
 

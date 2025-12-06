@@ -1,4 +1,4 @@
-import seed
+from . import seed
 
 import os
 import time
