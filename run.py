@@ -21,7 +21,7 @@ hidden_layer_size = 200
 
 # Gradient descent and MSE loss
 epochs = 20000
-learning_rates = [0.13, 0.12, 0.1, 0.07, 0.06, 0.05, 0.04, 0.032]
+learning_rates = [0.13, 0.07, 0.04]
 accuracy = 0.99
 
 for learning_rate in learning_rates:
@@ -40,7 +40,7 @@ for learning_rate in learning_rates:
 
 # Gradient descent and Cross-Entropy loss
 epochs = 4000
-learning_rates = [0.032, 0.025, 0.02, 0.015, 0.01]
+learning_rates  = [0.032, 0.025, 0.02]
 accuracy = 0.999
 for learning_rate in learning_rates:
 
@@ -78,7 +78,7 @@ for learning_rate in learning_rates:
 
 # Gradient descent with momentum and Cross-Entropy loss
 epochs = 500
-learning_rates = [0.1, 0.09, 0.08, 0.07, 0.06, 0.05, 0.04, 0.03]
+learning_rates  = [0.10, 0.06, 0.04]
 momentum = 0.9
 accuracy = 0.9999
 
@@ -138,13 +138,12 @@ md, out = functions.load_output_files()
 
 functions.generate_gd_quadratic_plot()
 
-model_ids_mse = [1, 4, 7]
-model_ids_ce = [9, 10, 11]
+model_ids_mse = [1, 2, 3]
+model_ids_ce = [4, 5, 6]
 functions.plot_sgd_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=False)
-
-model_ids_mse = [14, 15, 16]
-model_ids_ce = [17, 21, 23]
+model_ids_mse = [7, 8, 9]
+model_ids_ce = [10, 11, 12]
 functions.plot_sgdm_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=False)
-model_ids_mse = [25, 26, 27]
-model_ids_ce = [28, 29, 30]
+model_ids_mse = [13, 14, 15]
+model_ids_ce = [16, 17, 18]
 functions.plot_rmsprop_fcnn_data(md, out, model_ids_mse, model_ids_ce, save=False)
