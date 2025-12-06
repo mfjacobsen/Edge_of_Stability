@@ -14,6 +14,7 @@ from plotly.subplots import make_subplots
 device = seed.device
 generator = seed.generator
 
+
 def sample_data(X, y, num_per_class):
     X = np.asarray(X)
     y = np.asarray(y)
@@ -66,7 +67,7 @@ def load_cifar_10(num_per_class=500, test_num_per_class=100):
 
     return X, y, X_test, y_test, y_onehot, y_test_onehot
 
-def setup_output_files(output_dir="../output"): 
+def setup_output_files(output_dir="output"): 
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -104,7 +105,7 @@ def setup_output_files(output_dir="../output"):
 
     return metadata, output_data
 
-def load_output_files(output_dir="../output"):
+def load_output_files(output_dir="output"):
     metadata_path = os.path.join(output_dir, "metadata_replication.csv")
     output_data_path = os.path.join(output_dir, "output_replication.csv")
 
@@ -113,7 +114,7 @@ def load_output_files(output_dir="../output"):
 
     return metadata, output_data
 
-def save_output_files(metadata, output_data, output_dir="../output"):
+def save_output_files(metadata, output_data, output_dir="output"):
 
     metadata_path = os.path.join(output_dir, "metadata_replication.csv")
     output_data_path = os.path.join(output_dir, "output_replication.csv")
@@ -121,7 +122,7 @@ def save_output_files(metadata, output_data, output_dir="../output"):
     metadata.to_csv(metadata_path, index=False)
     output_data.to_csv(output_data_path, index=False)
 
-def delete_model_data(model_ids, output_dir="../output"):
+def delete_model_data(model_ids, output_dir="output"):
     metadata, output_data = load_output_files(output_dir)
     metadata = metadata[~metadata['model_id'].isin(model_ids)]
     output_data = output_data[~output_data['model_id'].isin(model_ids)]
@@ -453,7 +454,7 @@ def plot_sgd_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True)
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_html("../output/images/gd_fcnn_cifar10.html")
+        fig.write_html("output/images/gd_fcnn_cifar10.html")
     fig.show()
 
 def plot_sgdm_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True):
@@ -580,7 +581,7 @@ def plot_sgdm_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_html("../output/images/gd_mom_fcnn_cifar10.html")
+        fig.write_html("output/images/gd_mom_fcnn_cifar10.html")
     fig.show()
 
 def plot_rmsprop_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=True):
@@ -704,7 +705,7 @@ def plot_rmsprop_fcnn_data(metadata, output, model_ids_mse, model_ids_ce, save=T
                                    bgcolor='rgba(255, 255, 255, 0.3)')
                     )
     if save:
-        fig.write_html("../output/images/rmsprop_fcnn_cifar10.html")
+        fig.write_html("output/images/rmsprop_fcnn_cifar10.html")
     fig.show()
 
 def generate_gd_quadratic_plot():
@@ -799,4 +800,4 @@ def generate_gd_quadratic_plot():
     )
 
     fig.show()
-    fig.write_html("../output/images/gd_quadratic.html")
+    fig.write_html("output/images/gd_quadratic.html")
